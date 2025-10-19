@@ -1,0 +1,164 @@
+# Production Order System - Git Ignore
+# Raiz: production_order_system/
+
+## BACKEND (.NET) ##
+# Build results
+ProductionOrderApi/[Dd]ebug/
+ProductionOrderApi/[Dd]ebugPublic/
+ProductionOrderApi/[Rr]elease/
+ProductionOrderApi/[Rr]eleases/
+ProductionOrderApi/x64/
+ProductionOrderApi/x86/
+ProductionOrderApi/[Ww][Ii][Nn]32/
+ProductionOrderApi/[Aa][Rr][Mm]/
+ProductionOrderApi/[Aa][Rr][Mm]64/
+ProductionOrderApi/bld/
+ProductionOrderApi/[Bb]in/
+ProductionOrderApi/[Oo]bj/
+ProductionOrderApi/[Oo]ut/
+ProductionOrderApi/msbuild.log
+ProductionOrderApi/msbuild.err
+ProductionOrderApi/msbuild.wrn
+
+# Visual Studio
+ProductionOrderApi/.vs/
+ProductionOrderApi/.vscode/
+ProductionOrderApi/*.user
+ProductionOrderApi/*.userosscache
+ProductionOrderApi/*.sln.iml
+
+# Rider
+ProductionOrderApi/.idea/
+ProductionOrderApi/*.sln.iml
+
+# MSTest test results
+ProductionOrderApi/[Tt]est[Rr]esult*/
+ProductionOrderApi/[Bb]uild[Ll]og.*
+
+# NuGet
+ProductionOrderApi/[Nn]uGet/
+ProductionOrderApi/*.nupkg
+ProductionOrderApi/.nuget/
+ProductionOrderApi/packages/
+ProductionOrderApi/nuget.exe
+
+# Azure
+ProductionOrderApi/*.pfx
+ProductionOrderApi/*.publishsettings
+
+# Runtime data
+ProductionOrderApi/appsettings.Development.json
+ProductionOrderApi/appsettings.Local.json
+ProductionOrderApi/*.db
+ProductionOrderApi/*.mdf
+ProductionOrderApi/*.ldf
+
+## FRONTEND (React + Vite) ##
+# Dependencies
+production-order-vite/node_modules/
+production-order-vite/npm-debug.log*
+production-order-vite/yarn-debug.log*
+production-order-vite/yarn-error.log*
+production-order-vite/.pnp/*
+
+# Build outputs
+production-order-vite/dist/
+production-order-vite/build/
+production-order-vite/.vite/
+
+# Environment variables
+production-order-vite/.env
+production-order-vite/.env.local
+production-order-vite/.env.development.local
+production-order-vite/.env.test.local
+production-order-vite/.env.production.local
+
+# Logs
+production-order-vite/logs/
+production-order-vite/*.log
+
+# Coverage directory used by tools like istanbul
+production-order-vite/coverage/
+production-order-vite/*.lcov
+
+# nyc test coverage
+production-order-vite/.nyc_output/
+
+# ESLint cache
+production-order-vite/.eslintcache
+
+# Optional npm cache directory
+production-order-vite/.npm
+
+# Optional REPL history
+production-order-vite/.node_repl_history
+
+# Output of 'npm pack'
+production-order-vite/*.tgz
+
+# Yarn Integrity file
+production-order-vite/.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+production-order-vite/.cache
+production-order-vite/.parcel-cache
+
+## GERAL / SISTEMA ##
+# OS
+.DS_Store
+Thumbs.db
+*.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+*.log
+logs/
+
+# Backup
+*.bak
+*.tmp
+*.backup
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de cache
+.cache/
+
+# Arquivos de sessão
+*.session
+
+# Arquivos de lock
+*.lock
+
+# IDE (aplicável a todo o projeto)
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database files (em qualquer lugar do projeto)
+*.mdf
+*.ldf
+*.ndf
+*.db
+*.sqlite3
+
+# Environment files (em qualquer lugar)
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Docker
+docker-compose.override.yml
+
+# CI/CD
+.gha/
+.azure/
